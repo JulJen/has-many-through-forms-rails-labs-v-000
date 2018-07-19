@@ -34,14 +34,11 @@
 <h4>Submit a comment: </h4>
 
 <%= form_for(@post.comments.build) do |f| %>
-<<<<<<< HEAD
   <%= f.hidden_field :post_id %>
   <%= f.collection_select :user_id, User.all, :id, :username, include_blank: 'Choose a User' %>
 
-=======
   <%= f.collection_select :user_id, User.all, :id, :username, include_blank: 'Choose a User' %>
   <%= f.hidden_field :username %>
->>>>>>> 6327f9e5fd64bc7ebc66ed8672e28d61e5131554
 
   <br><br>
 
