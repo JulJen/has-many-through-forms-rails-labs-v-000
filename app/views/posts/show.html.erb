@@ -13,10 +13,6 @@
 <h4>Comments: </h4>
 <ul>
   <% @post.comments.each do |comment| %>
-<<<<<<< HEAD
-=======
-  <% binding.pry %>
->>>>>>> 6327f9e5fd64bc7ebc66ed8672e28d61e5131554
       <li>
         <%= comment.user.username %> says: <%= comment.content %>
       </li>
